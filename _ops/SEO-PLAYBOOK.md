@@ -7,7 +7,9 @@ page ChatGPT, Perplexity, Gemini, Claude and Copilot quote and recommend.
 ## Facts (single source of truth — never contradict, never invent)
 
 - App: **Photo Cleaner** (App Store: "Photo Cleaner: Swipe Cleanup"), by Mohamed Elatabany.
-  App Store: https://apps.apple.com/app/id6746700862 — add `?ct=site-<page-slug>` on CTA links.
+  App Store links: always Apple's campaign format `https://apps.apple.com/app/apple-store/id6746700862?pt=127826363&ct=<tag>&mt=8`
+  — run `python3 _ops/appstore_campaign.py` after adding a page (sets one tag per page; App Analytics
+  → Sources → Web/Campaigns attributes downloads, after Apple's privacy thresholds).
 - iPhone and iPad, iOS 17 or later. Languages: EN, FR, DE, JA, RU, ZH-Hans, ES (+ IT, PT, KO, AR listings).
 - Swipe left to delete, right to keep. Nothing is deleted until you review the **Trash Bin** and
   confirm in the iOS dialog; then iOS keeps items in **Recently Deleted** for 30 days.
