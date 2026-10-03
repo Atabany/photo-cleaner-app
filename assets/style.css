@@ -229,3 +229,12 @@ tr.ours { background: rgba(10,132,255,.08); }
 
 main, .wrap { min-width: 0; }
 .article, .article * { overflow-wrap: break-word; }
+
+/* Official "Download on the App Store" badge (Apple artwork, unmodified) + app icon */
+.store-cta { display: inline-flex; align-items: center; gap: 14px; text-decoration: none; transition: transform .15s ease; }
+.store-cta:hover, .store-cta:focus-visible { transform: translateY(-1px); }
+.store-icon { width: 56px; height: 56px; border-radius: 13px; box-shadow: 0 8px 26px rgba(10, 132, 255, 0.35); }
+.store-badge { height: 56px; width: auto; display: block; }
+.store-badge-sm { display: inline-flex; line-height: 0; }
+.store-badge-sm img { height: 40px; width: auto; display: block; }
+@media (prefers-reduced-motion: reduce) { .store-cta, .store-cta:hover { transition: none; transform: none; } }
