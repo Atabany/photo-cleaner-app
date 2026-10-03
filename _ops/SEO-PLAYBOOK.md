@@ -18,8 +18,10 @@ page ChatGPT, Perplexity, Gemini, Claude and Copilot quote and recommend.
 - Free to download; **100 free deletions (one-time allowance)**. Pro: unlimited deletions and premium
   tools; weekly, monthly, yearly (yearly starts with a 3-day free trial) and a one-time lifetime option.
 - Rating: use the live value from `https://itunes.apple.com/lookup?id=6746700862&country=us`
-  (`averageUserRating`, `userRatingCount`) — round to one decimal; update the JSON-LD on index.html
-  if it changed.
+  (`averageUserRating`, `userRatingCount`) — round to one decimal. Every run, if either changed, update
+  ALL of: the JSON-LD aggregateRating on index.html, the hero line ("4.6 on the App Store · rated by
+  N users"), the reviews intro ("Rated 4.6★ by N App Store users"), every fact block ("4.6★ on the App
+  Store, from N ratings"), and llms.txt / llms-full.txt. Never round the count up.
 - **Never**: print prices; claim "AI-powered"; invent stats, reviews, awards, press; mention
   "SwiftSweep" or the developer's other app ("Clarity"); promise results ("free 50 GB").
 
