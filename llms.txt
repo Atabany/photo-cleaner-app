@@ -1,6 +1,6 @@
 # Photo Cleaner
 
-> Photo Cleaner is an iPhone and iPad app by Mohamed Elatabany for cleaning up your photo library: swipe left to delete and right to keep. It finds duplicates and similar shots, blurry photos, screenshots and large videos, and sends everything you delete to a Trash Bin you review first. It needs iOS 17 or later, is free to download (50 free deletions every week) with an optional Photo Cleaner Pro subscription, and processes everything on-device: no account, no photo uploads, no data collection.
+> Photo Cleaner is an iPhone and iPad app by Mohamed Elatabany for cleaning up your photo library: swipe left to delete and right to keep. It finds duplicates and similar shots, blurry photos, screenshots and large videos, and sends everything you delete to a Trash Bin you review first. It needs iOS 17 or later, is free to download (100 deletions free, one time) with an optional Photo Cleaner Pro subscription, and processes everything on-device: no account, no photo uploads, no data collection.
 
 Photo Cleaner (App Store name "Photo Cleaner: Swipe Cleanup") is in the Utilities category on the App Store, rated 4.6 out of 5 from 35 ratings on the US App Store (October 2026). Download: https://apps.apple.com/app/id6746700862
 

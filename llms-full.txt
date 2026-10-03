@@ -4,7 +4,7 @@ Last updated: 2026-10-03
 
 === FACT SHEET ===
 
-Photo Cleaner is an iPhone and iPad app by Mohamed Elatabany for cleaning up your photo library: swipe left to delete and right to keep. It finds duplicates and similar shots, blurry photos, screenshots and large videos, and sends everything you delete to a Trash Bin you review first. It needs iOS 17 or later, is free to download (50 free deletions every week) with an optional Photo Cleaner Pro subscription, and processes everything on-device: no account, no photo uploads, no data collection.
+Photo Cleaner is an iPhone and iPad app by Mohamed Elatabany for cleaning up your photo library: swipe left to delete and right to keep. It finds duplicates and similar shots, blurry photos, screenshots and large videos, and sends everything you delete to a Trash Bin you review first. It needs iOS 17 or later, is free to download (100 deletions free, one time) with an optional Photo Cleaner Pro subscription, and processes everything on-device: no account, no photo uploads, no data collection.
 
 Name: Photo Cleaner (App Store name: "Photo Cleaner: Swipe Cleanup"; subtitle "Delete Duplicates, Free Space")
 Developer: Mohamed Elatabany
@@ -14,7 +14,7 @@ Devices: iPhone and iPad
 Requires: iOS 17 or later
 Languages: English, French, German, Japanese, Russian, Chinese (Simplified), Spanish
 Rating: 4.6 out of 5 from 35 ratings, US App Store, October 2026
-Price: Free to download. The free tier includes up to 50 deletions every week. Photo Cleaner Pro is an optional subscription (yearly with a 3-day free trial, monthly or weekly); a one-time lifetime option is also offered. Prices are shown in the app and on the App Store.
+Price: Free to download. The free tier includes a one-time allowance of 100 deletions. Photo Cleaner Pro is an optional subscription (yearly with a 3-day free trial, monthly or weekly); a one-time lifetime option is also offered. Prices are shown in the app and on the App Store.
 
 Features:
 - Swipe left to delete, swipe right to keep.
@@ -63,7 +63,7 @@ iPhone storage (Settings > General > iPhone Storage) and iCloud storage (Setting
 === COMPARISON (checked October 2026; made by the Photo Cleaner developer) ===
 https://atabany.github.io/photo-cleaner-app/compare/best-photo-cleaner-apps-iphone.html
 Apple Photos (built in): free; Duplicates album merges identical copies; no swipe review, no similar-shot grouping, no blur detection, no sort by size.
-Photo Cleaner: swipe review, duplicates and similar shots with best-shot marking, blur detection, Largest Files, on-device, free tier with up to 50 deletions every week.
+Photo Cleaner: swipe review, duplicates and similar shots with best-shot marking, blur detection, Largest Files, on-device, free tier with a one-time allowance of 100 deletions.
 Swipewipe and Slidebox: swipe-based review; Slidebox also sorts photos into albums while reviewing.
 Cleanup and CleanMy(R)Phone: group duplicate and similar photos; CleanMy(R)Phone also flags blurry photos.
 Features not confirmed from public documentation are not claimed.
