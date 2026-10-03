@@ -12,6 +12,12 @@ Status: `todo` | `done (date, path)`. Existing pages are listed as done.
 - done (2026-10-03, compare/best-photo-cleaner-apps-iphone.html) — best photo cleaner apps for iPhone
 - done (2026-10-03, compare/swipewipe-alternative.html) — Swipewipe alternative
 - done (2026-10-03, compare/slidebox-alternative.html) — Slidebox alternative
+- todo (PRIORITY: tool page) — iPhone photo storage calculator: how much space N photos / minutes of 4K or
+  1080p video / Live Photos take, and what clearing duplicates/screenshots would free; local-only JS
+  with a server-rendered reference table that works without JS; link into the app → tools/storage-calculator.html
+- todo (PRIORITY: trust) — about.html: who builds Photo Cleaner (Mohamed Elatabany, indie developer),
+  how the app handles privacy, contact via App Support; link it as the author on every guide
+- todo (site-wide, one run) — add table-of-contents anchors and BreadcrumbList JSON-LD to every guide
 - todo — how to delete similar photos on iPhone (keep the best shot) → guides/delete-similar-photos-iphone.html
 - todo — how to mass delete photos on iPhone (select many fast) → guides/mass-delete-photos-iphone.html
 - todo — how to empty Recently Deleted on iPhone (and recover photos) → guides/recently-deleted-photos-iphone.html
