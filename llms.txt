@@ -6,28 +6,28 @@ Photo Cleaner (App Store name "Photo Cleaner: Swipe Cleanup") is in the Utilitie
 
 ## App
 
-- [Photo Cleaner home](https://atabany.github.io/photo-cleaner-app/): Features, privacy, App Store reviews and FAQ.
+- [Photo Cleaner home](https://getphotocleaner.com/): Features, privacy, App Store reviews and FAQ.
 - [App Store page](https://apps.apple.com/app/id6746700862): Download Photo Cleaner for iPhone and iPad (iOS 17 or later).
-- [Support](https://atabany.github.io/photo-cleaner-app/support.html): Fix photos not loading, restore Pro purchases, recover deleted photos and learn how the Trash Bin works in Photo Cleaner for iPhone.
+- [Support](https://getphotocleaner.com/support.html): Fix photos not loading, restore Pro purchases, recover deleted photos and learn how the Trash Bin works in Photo Cleaner for iPhone.
 
 ## Guides
 
-- [Delete duplicate photos on iPhone](https://atabany.github.io/photo-cleaner-app/guides/delete-duplicate-photos-iphone.html): Use the free Duplicates album in Photos to merge exact copies, then remove similar shots and keep the best one. Steps for iOS 17, 18 and 26.
-- [Free up iPhone storage from Photos](https://atabany.github.io/photo-cleaner-app/guides/free-up-iphone-storage-photos.html): Free up iPhone storage from Photos, biggest wins first: videos, Live Photos, screenshots, bursts, duplicates and blurry shots. Built-in steps included.
-- [Clean up your camera roll fast](https://atabany.github.io/photo-cleaner-app/guides/clean-up-camera-roll-fast.html): Clean up your iPhone camera roll with the swipe method: one decision per photo, ten minutes a day, safe review before anything is deleted.
-- [Delete blurry photos on iPhone](https://atabany.github.io/photo-cleaner-app/guides/delete-blurry-photos-iphone.html): Photos has no blur filter. Find blurry iPhone photos manually, or flag them with on-device Blur Detection and review before deleting.
-- [Delete screenshots on iPhone](https://atabany.github.io/photo-cleaner-app/guides/delete-screenshots-iphone.html): Bulk-delete screenshots on iPhone from the built-in Screenshots album with drag-to-select, then stop them piling up again. iOS 17, 18 and 26.
-- [Find large videos on iPhone](https://atabany.github.io/photo-cleaner-app/guides/find-large-videos-iphone.html): Photos can't sort by size. Find the biggest videos on your iPhone with built-in tools, or list them largest first and free gigabytes fast.
-- [iPhone storage full with iCloud Photos](https://atabany.github.io/photo-cleaner-app/guides/iphone-storage-full-icloud-photos.html): Device vs iCloud storage, what Optimize iPhone Storage does, why deleting syncs to iCloud, and how Recently Deleted's 30 days work.
+- [Delete duplicate photos on iPhone](https://getphotocleaner.com/guides/delete-duplicate-photos-iphone.html): Use the free Duplicates album in Photos to merge exact copies, then remove similar shots and keep the best one. Steps for iOS 17, 18 and 26.
+- [Free up iPhone storage from Photos](https://getphotocleaner.com/guides/free-up-iphone-storage-photos.html): Free up iPhone storage from Photos, biggest wins first: videos, Live Photos, screenshots, bursts, duplicates and blurry shots. Built-in steps included.
+- [Clean up your camera roll fast](https://getphotocleaner.com/guides/clean-up-camera-roll-fast.html): Clean up your iPhone camera roll with the swipe method: one decision per photo, ten minutes a day, safe review before anything is deleted.
+- [Delete blurry photos on iPhone](https://getphotocleaner.com/guides/delete-blurry-photos-iphone.html): Photos has no blur filter. Find blurry iPhone photos manually, or flag them with on-device Blur Detection and review before deleting.
+- [Delete screenshots on iPhone](https://getphotocleaner.com/guides/delete-screenshots-iphone.html): Bulk-delete screenshots on iPhone from the built-in Screenshots album with drag-to-select, then stop them piling up again. iOS 17, 18 and 26.
+- [Find large videos on iPhone](https://getphotocleaner.com/guides/find-large-videos-iphone.html): Photos can't sort by size. Find the biggest videos on your iPhone with built-in tools, or list them largest first and free gigabytes fast.
+- [iPhone storage full with iCloud Photos](https://getphotocleaner.com/guides/iphone-storage-full-icloud-photos.html): Device vs iCloud storage, what Optimize iPhone Storage does, why deleting syncs to iCloud, and how Recently Deleted's 30 days work.
 
 ## Comparisons
 
-- [Best photo cleaner apps (2026)](https://atabany.github.io/photo-cleaner-app/compare/best-photo-cleaner-apps-iphone.html): An honest 2026 comparison of Apple Photos, Photo Cleaner, Swipewipe, Slidebox, Cleanup and CleanMy®Phone: swiping, duplicates, blur, large videos.
-- [Swipewipe alternative](https://atabany.github.io/photo-cleaner-app/compare/swipewipe-alternative.html): Like swiping to clean photos? Photo Cleaner adds duplicate grouping, blur detection and largest-files sorting, all on-device. A fair comparison.
-- [Slidebox alternative](https://atabany.github.io/photo-cleaner-app/compare/slidebox-alternative.html): Slidebox is great for sorting albums. Photo Cleaner focuses on clearing space: duplicates, blurry shots and large videos, on-device. Fair comparison.
+- [Best photo cleaner apps (2026)](https://getphotocleaner.com/compare/best-photo-cleaner-apps-iphone.html): An honest 2026 comparison of Apple Photos, Photo Cleaner, Swipewipe, Slidebox, Cleanup and CleanMy®Phone: swiping, duplicates, blur, large videos.
+- [Swipewipe alternative](https://getphotocleaner.com/compare/swipewipe-alternative.html): Like swiping to clean photos? Photo Cleaner adds duplicate grouping, blur detection and largest-files sorting, all on-device. A fair comparison.
+- [Slidebox alternative](https://getphotocleaner.com/compare/slidebox-alternative.html): Slidebox is great for sorting albums. Photo Cleaner focuses on clearing space: duplicates, blurry shots and large videos, on-device. Fair comparison.
 
 ## Optional
 
-- [Privacy Policy](https://atabany.github.io/photo-cleaner-app/privacy.html): Photo Cleaner processes your photos on-device, collects no personal data, shows no ads and does no tracking. Read the full privacy policy.
-- [Terms of Use](https://atabany.github.io/photo-cleaner-app/terms.html): Photo Cleaner terms of use: Apple's standard EULA, how Photo Cleaner Pro subscriptions and the free trial work, and how to cancel.
-- [Full text fact sheet](https://atabany.github.io/photo-cleaner-app/llms-full.txt): Plain-text facts and condensed guide content.
+- [Privacy Policy](https://getphotocleaner.com/privacy.html): Photo Cleaner processes your photos on-device, collects no personal data, shows no ads and does no tracking. Read the full privacy policy.
+- [Terms of Use](https://getphotocleaner.com/terms.html): Photo Cleaner terms of use: Apple's standard EULA, how Photo Cleaner Pro subscriptions and the free trial work, and how to cancel.
+- [Full text fact sheet](https://getphotocleaner.com/llms-full.txt): Plain-text facts and condensed guide content.

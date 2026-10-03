@@ -1,5 +1,5 @@
 PHOTO CLEANER: FACT SHEET AND GUIDE SUMMARIES
-Source: https://atabany.github.io/photo-cleaner-app/
+Source: https://getphotocleaner.com/
 Last updated: 2026-10-03
 
 === FACT SHEET ===
@@ -30,38 +30,38 @@ Privacy: 100% on-device processing. No account. No photo uploads. No personal da
 Support: email the developer via the App Support link on the App Store page.
 
 === GUIDE: How to delete duplicate photos on iPhone ===
-https://atabany.github.io/photo-cleaner-app/guides/delete-duplicate-photos-iphone.html
+https://getphotocleaner.com/guides/delete-duplicate-photos-iphone.html
 1. Built in (iOS 16+): Photos > Albums > Utilities > Duplicates (iOS 17); scroll down to Utilities > Duplicates (iOS 18); Collections > Utilities > Duplicates (iOS 26). Tap Merge on a set, or Select > Select All > Merge. Merge keeps the highest-quality version, combines metadata, and moves the others to Recently Deleted (30 days).
 2. The album appears only when duplicates are found; scanning runs in the background.
 3. Limits: only identical copies (including different resolution or metadata); similar shots are not grouped; no blur check.
 4. Photo Cleaner's Similars / Duplicates finder groups near-identical shots, marks the best, and sends the rest to the Trash Bin for review.
 
 === GUIDE: How to free up iPhone storage from Photos ===
-https://atabany.github.io/photo-cleaner-app/guides/free-up-iphone-storage-photos.html
+https://getphotocleaner.com/guides/free-up-iphone-storage-photos.html
 Check Settings > General > iPhone Storage first. Then, roughly in order of space saved: (1) videos: Media Types > Videos, swipe up on a video to see its size; Settings > Camera > Record Video shows size per minute; (2) Live Photos: Media Types > Live Photos; Settings > Camera > Preserve Settings > Live Photo; (3) screenshots: Media Types > Screenshots, Select and drag; (4) bursts: open a burst > Select > choose frames > Done > Keep Only Favorites; (5) duplicates: Utilities > Duplicates > Merge; (6) blurry photos: no built-in filter. Finally empty Utilities > Recently Deleted (Select > Delete All), because deleted items keep using space for 30 days.
 
 === GUIDE: How to clean up your camera roll fast ===
-https://atabany.github.io/photo-cleaner-app/guides/clean-up-camera-roll-fast.html
+https://getphotocleaner.com/guides/clean-up-camera-roll-fast.html
 Use the swipe method: one photo at a time, left to delete, right to keep. Ten minutes a day on one month or one category (screenshots first, then similar shots, large videos, then month by month). Review the Trash Bin before emptying it. Keep anything you hesitate on. In the Photos app, swiping only navigates; deleting needs the trash icon or grid selection.
 
 === GUIDE: How to find and delete blurry photos on iPhone ===
-https://atabany.github.io/photo-cleaner-app/guides/delete-blurry-photos-iphone.html
+https://getphotocleaner.com/guides/delete-blurry-photos-iphone.html
 Photos has no blur filter. Manually: enlarge thumbnails, check low-light and moving shots, zoom to confirm, Select and delete; trim Bursts to the sharpest frame. Photo Cleaner's Blur Detection flags likely out-of-focus shots on-device for review. Keep intentional blur and one-of-a-kind moments. Prevent blur: clean the lens, tap to focus, hold still in Night mode.
 
 === GUIDE: How to delete all screenshots on iPhone ===
-https://atabany.github.io/photo-cleaner-app/guides/delete-screenshots-iphone.html
+https://getphotocleaner.com/guides/delete-screenshots-iphone.html
 Photos > Media Types > Screenshots > Select, then tap the first screenshot and drag across rows to select many; tap the trash icon and confirm. Screen recordings are in Media Types > Screen Recordings. Check for tickets, receipts and codes first. After taking a screenshot, tap the preview and choose Done > Delete Screenshot (or Copy and Delete) to avoid saving it.
 
 === GUIDE: How to find large videos on iPhone ===
-https://atabany.github.io/photo-cleaner-app/guides/find-large-videos-iphone.html
+https://getphotocleaner.com/guides/find-large-videos-iphone.html
 Photos cannot sort by size. Browse Media Types > Videos (durations on thumbnails) and swipe up on a video to see file size; check Settings > General > iPhone Storage for a recommendation to review videos. Photo Cleaner's Largest Files lists the biggest photos and videos first. Save space without deleting: trim (Edit > Save Video as New Clip), move to a computer or drive, or use iCloud Photos with Optimize iPhone Storage. Record smaller: lower resolution/frame rate in Settings > Camera > Record Video; Formats > High Efficiency.
 
 === GUIDE: iPhone storage full with iCloud Photos ===
-https://atabany.github.io/photo-cleaner-app/guides/iphone-storage-full-icloud-photos.html
+https://getphotocleaner.com/guides/iphone-storage-full-icloud-photos.html
 iPhone storage (Settings > General > iPhone Storage) and iCloud storage (Settings > [your name] > iCloud) are separate. With iCloud Photos on, Settings > [your name] > iCloud > Photos > Optimize iPhone Storage keeps originals in iCloud and smaller versions on the device; Download and Keep Originals keeps everything locally. iCloud Photos is sync, not backup: deleting a photo on any device deletes it everywhere, whichever app you use. Deleted items stay in Recently Deleted for 30 days (recoverable, locked with Face ID on iOS 17+), and still use device space until removed.
 
 === COMPARISON (checked October 2026; made by the Photo Cleaner developer) ===
-https://atabany.github.io/photo-cleaner-app/compare/best-photo-cleaner-apps-iphone.html
+https://getphotocleaner.com/compare/best-photo-cleaner-apps-iphone.html
 Apple Photos (built in): free; Duplicates album merges identical copies; no swipe review, no similar-shot grouping, no blur detection, no sort by size.
 Photo Cleaner: swipe review, duplicates and similar shots with best-shot marking, blur detection, Largest Files, on-device, free tier with a one-time allowance of 100 deletions.
 Swipewipe and Slidebox: swipe-based review; Slidebox also sorts photos into albums while reviewing.
