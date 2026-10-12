@@ -1,6 +1,6 @@
 PHOTO CLEANER: FACT SHEET AND GUIDE SUMMARIES
 Source: https://getphotocleaner.com/
-Last updated: 2026-10-03
+Last updated: 2026-10-12
 
 === FACT SHEET ===
 
@@ -59,6 +59,10 @@ Photos cannot sort by size. Browse Media Types > Videos (durations on thumbnails
 === GUIDE: iPhone storage full with iCloud Photos ===
 https://getphotocleaner.com/guides/iphone-storage-full-icloud-photos.html
 iPhone storage (Settings > General > iPhone Storage) and iCloud storage (Settings > [your name] > iCloud) are separate. With iCloud Photos on, Settings > [your name] > iCloud > Photos > Optimize iPhone Storage keeps originals in iCloud and smaller versions on the device; Download and Keep Originals keeps everything locally. iCloud Photos is sync, not backup: deleting a photo on any device deletes it everywhere, whichever app you use. Deleted items stay in Recently Deleted for 30 days (recoverable, locked with Face ID on iOS 17+), and still use device space until removed.
+
+=== GUIDE: How to empty or recover Recently Deleted photos on iPhone ===
+https://getphotocleaner.com/guides/recently-deleted-photos-iphone.html
+Deleted photos and videos stay in Photos > Utilities > Recently Deleted for 30 days (locked with Face ID, Touch ID or passcode on iOS 17+), then iOS removes them permanently. To free space now: unlock, Select > Delete All, confirm; this cannot be undone in Photos. To recover: tap the item > Recover, or Select several and choose Recover. After permanent deletion only a backup made earlier or copies elsewhere (Messages, computer) can help; with iCloud Photos a deletion syncs to all devices. Storage can look full because items still sit in Recently Deleted, or the Storage screen has not refreshed. Photo Cleaner adds a Trash Bin step before anything reaches Recently Deleted.
 
 === COMPARISON (checked October 2026; made by the Photo Cleaner developer) ===
 https://getphotocleaner.com/compare/best-photo-cleaner-apps-iphone.html

@@ -20,7 +20,7 @@ Status: `todo` | `done (date, path)`. Existing pages are listed as done.
 - todo (site-wide, one run) — add table-of-contents anchors and BreadcrumbList JSON-LD to every guide
 - todo — how to delete similar photos on iPhone (keep the best shot) → guides/delete-similar-photos-iphone.html
 - todo — how to mass delete photos on iPhone (select many fast) → guides/mass-delete-photos-iphone.html
-- todo — how to empty Recently Deleted on iPhone (and recover photos) → guides/recently-deleted-photos-iphone.html
+- done (2026-10-12, guides/recently-deleted-photos-iphone.html) — how to empty Recently Deleted on iPhone (and recover photos)
 - todo — how to delete burst photos on iPhone → guides/delete-burst-photos-iphone.html
 - todo — how to delete WhatsApp photos from iPhone gallery → guides/delete-whatsapp-photos-iphone.html
 - todo — Live Photos taking up space: convert or delete → guides/live-photos-storage-iphone.html

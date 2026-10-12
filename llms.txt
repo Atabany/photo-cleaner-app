@@ -19,6 +19,7 @@ Photo Cleaner (App Store name "Photo Cleaner: Swipe Cleanup") is in the Utilitie
 - [Delete screenshots on iPhone](https://getphotocleaner.com/guides/delete-screenshots-iphone.html): Bulk-delete screenshots on iPhone from the built-in Screenshots album with drag-to-select, then stop them piling up again. iOS 17, 18 and 26.
 - [Find large videos on iPhone](https://getphotocleaner.com/guides/find-large-videos-iphone.html): Photos can't sort by size. Find the biggest videos on your iPhone with built-in tools, or list them largest first and free gigabytes fast.
 - [iPhone storage full with iCloud Photos](https://getphotocleaner.com/guides/iphone-storage-full-icloud-photos.html): Device vs iCloud storage, what Optimize iPhone Storage does, why deleting syncs to iCloud, and how Recently Deleted's 30 days work.
+- [Empty or recover Recently Deleted photos on iPhone](https://getphotocleaner.com/guides/recently-deleted-photos-iphone.html): Recently Deleted keeps photos 30 days. How to empty it to free storage, recover photos, and what cannot be undone. iOS 17, 18 and 26.
 
 ## Comparisons
 
