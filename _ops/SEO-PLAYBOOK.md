@@ -64,3 +64,9 @@ page ChatGPT, Perplexity, Gemini, Claude and Copilot quote and recommend.
 - Never delete or rename existing URLs (they rank). Never change CNAME, BingSiteAuth.xml,
   google*.html, the IndexNow key file, or robots.txt bot rules.
 - Never add tracking scripts, ads, external JS, or Google Fonts.
+
+## Growth batch — 18 October 2026
+
+Prepared `about.html` and `tools/storage-calculator.html`; run `_ops/build_growth_tools.py` then `_ops/validate.py`. New pages and author/tool links use valid per-page campaigns. The deployment was based on the current public main branch and retains the existing Recently Deleted guide. Private app source has pre-existing edits; do not overwrite this checkout wholesale from that older source site.
+
+The existing large-video guide was also refined for observed Search Console queries about sorting iPhone videos by file size. Its URL is preserved; title, direct answer and modification date reflect this review. Query observations are small-sample evidence, not search-volume estimates.
