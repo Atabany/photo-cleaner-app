@@ -30,7 +30,7 @@ Photo Cleaner (App Store name "Photo Cleaner: Swipe Cleanup") is in the Utilitie
 ## Optional
 
 - [Privacy Policy](https://getphotocleaner.com/privacy.html): Photo Cleaner processes your photos on-device, collects no personal data, shows no ads and does no tracking. Read the full privacy policy.
-- [Terms of Use](https://getphotocleaner.com/terms.html): Photo Cleaner terms of use: Apple's standard EULA, how Photo Cleaner Pro subscriptions and the free trial work, and how to cancel.
+- [Terms of Use](https://getphotocleaner.com/terms.html): Photo Cleaner terms of use: Apple's standard EULA, how Photo Cleaner Pro subscriptions work and how to cancel.
 - [Full text fact sheet](https://getphotocleaner.com/llms-full.txt): Plain-text facts and condensed guide content.
 
 ## Author and local tool

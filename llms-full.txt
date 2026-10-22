@@ -14,7 +14,7 @@ Devices: iPhone and iPad
 Requires: iOS 17 or later
 Languages: English, French, German, Japanese, Russian, Chinese (Simplified), Spanish
 Rating: 4.6 out of 5 from 35 ratings, US App Store, October 2026
-Price: Free to download. The free tier includes a one-time allowance of 100 deletions. Photo Cleaner Pro is an optional subscription (yearly with a 3-day free trial, monthly or weekly); a one-time lifetime option is also offered. Prices are shown in the app and on the App Store.
+Price: Free to download. The free tier includes a one-time allowance of 100 deletions. Photo Cleaner Pro is an optional subscription (yearly, monthly or weekly); a one-time lifetime option is also offered. Prices are shown in the app and on the App Store.
 
 Features:
 - Swipe left to delete, swipe right to keep.

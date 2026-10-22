@@ -18,7 +18,7 @@ page ChatGPT, Perplexity, Gemini, Claude and Copilot quote and recommend.
   Favorites, messaging-app albums, Memory Lane (by month), Today's Throwback, stats & streaks.
 - 100% on-device: no account, no photo uploads, no data collection, works offline.
 - Free to download; **100 free deletions (one-time allowance)**. Pro: unlimited deletions and premium
-  tools; weekly, monthly, yearly (yearly starts with a 3-day free trial) and a one-time lifetime option.
+  tools; weekly, monthly, yearly (no free trial) and a one-time lifetime option.
 - Rating: use the live value from `https://itunes.apple.com/lookup?id=6746700862&country=us`
   (`averageUserRating`, `userRatingCount`) — round to one decimal. Every run, if either changed, update
   ALL of: the JSON-LD aggregateRating on index.html, the hero line ("4.6 on the App Store · rated by
