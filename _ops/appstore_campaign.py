@@ -13,8 +13,12 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 APP, PROVIDER = "6746700862", "127826363"
 
 
+TAG_OVERRIDES = {"guides/mass-delete-photos-iphone": "web-g-mass-delete"}  # the default would be 31 chars
+
+
 def tag_for(path: pathlib.Path) -> str:
     rel = path.relative_to(ROOT).with_suffix("").as_posix()
+    if rel in TAG_OVERRIDES: return TAG_OVERRIDES[rel]
     if rel == "index": return "web-home"
     folder, _, slug = rel.rpartition("/")
     prefix = {"guides": "g", "compare": "c"}.get(folder, "p")

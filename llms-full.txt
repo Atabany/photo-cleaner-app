@@ -64,6 +64,10 @@ iPhone storage (Settings > General > iPhone Storage) and iCloud storage (Setting
 https://getphotocleaner.com/guides/recently-deleted-photos-iphone.html
 Deleted photos and videos stay in Photos > Utilities > Recently Deleted for 30 days (locked with Face ID, Touch ID or passcode on iOS 17+), then iOS removes them permanently. To free space now: unlock, Select > Delete All, confirm; this cannot be undone in Photos. To recover: tap the item > Recover, or Select several and choose Recover. After permanent deletion only a backup made earlier or copies elsewhere (Messages, computer) can help; with iCloud Photos a deletion syncs to all devices. Storage can look full because items still sit in Recently Deleted, or the Storage screen has not refreshed. Photo Cleaner adds a Trash Bin step before anything reaches Recently Deleted.
 
+=== GUIDE: How to mass delete photos on iPhone ===
+https://getphotocleaner.com/guides/mass-delete-photos-iphone.html
+In Photos, open your library or a collection, tap Select, drag sideways along a row and then down to select many photos, tap the trash button and confirm. Items go to Recently Deleted for 30 days and keep using storage until deleted from there. Apple's iPhone guide documents no Select All for the Library. With iCloud Photos on, deletions apply to all devices on the same Apple Account. In a user album, Remove from Album leaves the photo in the library. Photo Cleaner builds a batch by swiping: left to delete, right to keep, then Trash Bin, Select All, Delete [number] Photos and the iOS confirmation. The free allowance is 100 deletions, one time.
+
 === COMPARISON (checked October 2026; made by the Photo Cleaner developer) ===
 https://getphotocleaner.com/compare/best-photo-cleaner-apps-iphone.html
 Apple Photos (built in): free; Duplicates album merges identical copies; no swipe review, no similar-shot grouping, no blur detection, no sort by size.
