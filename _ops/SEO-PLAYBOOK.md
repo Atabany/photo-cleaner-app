@@ -70,3 +70,19 @@ page ChatGPT, Perplexity, Gemini, Claude and Copilot quote and recommend.
 Prepared `about.html` and `tools/storage-calculator.html`; run `_ops/build_growth_tools.py` then `_ops/validate.py`. New pages and author/tool links use valid per-page campaigns. The deployment was based on the current public main branch and retains the existing Recently Deleted guide. Private app source has pre-existing edits; do not overwrite this checkout wholesale from that older source site.
 
 The existing large-video guide was also refined for observed Search Console queries about sorting iPhone videos by file size. Its URL is preserved; title, direct answer and modification date reflect this review. Query observations are small-sample evidence, not search-volume estimates.
+
+## 2026-11-04 — mass delete guide
+
+Owner asked for one new guide. Added `guides/mass-delete-photos-iphone.html` from the `todo` backlog: how to select and delete many photos at once. The closest pages cover one category (screenshots), a daily swipe habit (camera roll) or the follow-up step (Recently Deleted); none answers the general selection question. Choosing it is editorial judgment: no Search Console query or search volume was read for this run.
+
+Contents: Select plus drag steps per iOS version, a table of which grid to delete from, iCloud and Shared Library checks, getting the storage back, when drag-select is the wrong tool, exact app steps and a free-limit worked example (100 allowance, 40 used, 250 in the Trash Bin: Select All selects 60, 190 stay). Article, BreadcrumbList and FAQPage JSON-LD match the visible text. Campaign tag `web-g-mass-delete` is set through `TAG_OVERRIDES` in `appstore_campaign.py` because the default would be 31 characters.
+
+Sources checked 4 November against the iOS 27, 26, 18 and 17 editions: Apple's iPhone guide (delete or hide photos, media types), Photos for Mac (delete, album versus Smart Album) and iCloud.com (shared libraries). Only the iOS 17 edition mentions dragging, and no edition documents Select All for the Library, so the page says that rather than asserting either way for every screen. Command-A on Mac is standard behavior, not from those pages. App labels checked in `TrashBinScreen.swift`, Home views and `Localizable.strings` at build 58 (2.2.0). Live lookup: 2.2.0, 4.6 from 35 US ratings, unchanged.
+
+Linked from the home guide cards and home footer, and from the camera roll, screenshots and Recently Deleted guides. The other pages' footer lists were left alone. The table uses inline `min-width:0` and `white-space:normal` on this page because the shared table CSS hides two of three columns at 390 px; other tables keep the shared rule.
+
+Verified: validator OK, desktop 1280 and true 390 px read, no horizontal overflow. Commit `a286b7a` deployed through pages-build-deployment; changed pages return 200 and the checked files match the commit byte for byte. IndexNow HTTP 200 for 5 URLs (received, not proof of indexing).
+
+Known issues, not changed: `guides/recently-deleted-photos-iphone.html` has a footer link labelled "Delete blurry photos on iPhone" that points to itself. Open owner decision: the site shows 4.6 from 35 US ratings (lookup rule above), while the app repo recorded a rule on 2026-10-22 to show the App Store Connect global value (4.7 from 118 as of 2026-10-04). This run did not choose between them.
+
+Source flow: this repo was ahead of `site/` in the app repo, so the guide was written here and `site/` was then mirrored from it. Edit here or in `site/`, then copy across in the same run.
