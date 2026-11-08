@@ -25,13 +25,18 @@ def tag_for(path: pathlib.Path) -> str:
     return f"web-{prefix}-{slug}"[:40]
 
 
-for p in ROOT.rglob("*.html"):
-    if p.relative_to(ROOT).as_posix().startswith("_ops"): continue
-    def fix(m):
-        u = urlsplit(html.unescape(m.group(1)))
-        if u.hostname != "apps.apple.com" or APP not in u.path: return m.group(0)
-        q = urlencode({"pt": PROVIDER, "ct": tag_for(p), "mt": "8"})
-        return 'href="' + html.escape(f"https://apps.apple.com/app/apple-store/id{APP}?{q}", quote=True) + '"'
-    s = p.read_text(); n = re.sub(r'href="([^"]+)"', fix, s)
-    if n != s: p.write_text(n)
-print("ok")
+def main():
+    for p in ROOT.rglob("*.html"):
+        if p.relative_to(ROOT).as_posix().startswith("_ops"): continue
+        def fix(m):
+            u = urlsplit(html.unescape(m.group(1)))
+            if u.hostname != "apps.apple.com" or APP not in u.path: return m.group(0)
+            q = urlencode({"pt": PROVIDER, "ct": tag_for(p), "mt": "8"})
+            return 'href="' + html.escape(f"https://apps.apple.com/app/apple-store/id{APP}?{q}", quote=True) + '"'
+        s = p.read_text(); n = re.sub(r'href="([^"]+)"', fix, s)
+        if n != s: p.write_text(n)
+    print("ok")
+
+
+if __name__ == "__main__":  # importable: _ops/sync_chrome.py reuses tag_for()
+    main()
