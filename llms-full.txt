@@ -28,6 +28,7 @@ Features:
 
 Privacy: 100% on-device processing. No account. No photo uploads. No personal data collected. No ads, no tracking. Works offline. Purchases use Apple StoreKit; RevenueCat is used to check subscription status.
 Support: email the developer via the App Support link on the App Store page.
+Press kit: https://getphotocleaner.com/press.html (boilerplate, facts, icon, screenshots, App Store preview video). First released June 2025; version 2.2.0 (October 2026); age rating 4+. The App Store lists 10 languages: English, French, German, Italian, Japanese, Korean, Portuguese, Russian, Chinese (Simplified), Spanish.
 
 === GUIDE: How to delete duplicate photos on iPhone ===
 https://getphotocleaner.com/guides/delete-duplicate-photos-iphone.html

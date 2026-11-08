@@ -8,6 +8,7 @@ Photo Cleaner (App Store name "Photo Cleaner: Swipe Cleanup") is in the Utilitie
 
 - [Photo Cleaner home](https://getphotocleaner.com/): Features, privacy, App Store reviews and FAQ.
 - [App Store page](https://apps.apple.com/app/id6746700862): Download Photo Cleaner for iPhone and iPad (iOS 17 or later).
+- [Press kit](https://getphotocleaner.com/press.html): One-line description, 60-word boilerplate, facts at a glance, the Trash Bin safety model, features, app icon, eight screenshots, the App Store preview video and press contact.
 - [Support](https://getphotocleaner.com/support.html): Fix photos not loading, restore Pro purchases, recover deleted photos and learn how the Trash Bin works in Photo Cleaner for iPhone.
 
 ## Guides

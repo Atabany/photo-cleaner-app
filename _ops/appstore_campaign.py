@@ -13,7 +13,10 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 APP, PROVIDER = "6746700862", "127826363"
 
 
-TAG_OVERRIDES = {"guides/mass-delete-photos-iphone": "web-g-mass-delete"}  # the default would be 31 chars
+TAG_OVERRIDES = {
+    "guides/mass-delete-photos-iphone": "web-g-mass-delete",  # the default would be 31 chars
+    "press": "press",  # owner-chosen tag for the press kit (2026-11-08)
+}
 
 
 def tag_for(path: pathlib.Path) -> str:

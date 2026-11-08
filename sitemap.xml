@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://getphotocleaner.com/</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
@@ -82,10 +82,14 @@
   </url>
   <url>
     <loc>https://getphotocleaner.com/about.html</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-11-08</lastmod>
   </url>
   <url>
     <loc>https://getphotocleaner.com/tools/storage-calculator.html</loc>
     <lastmod>2026-10-18</lastmod>
+  </url>
+  <url>
+    <loc>https://getphotocleaner.com/press.html</loc>
+    <lastmod>2026-11-08</lastmod>
   </url>
 </urlset>
