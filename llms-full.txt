@@ -77,6 +77,12 @@ Swipewipe and Slidebox: swipe-based review; Slidebox also sorts photos into albu
 Cleanup and CleanMy(R)Phone: group duplicate and similar photos; CleanMy(R)Phone also flags blurry photos.
 Features not confirmed from public documentation are not claimed.
 
+=== COMPARISON: Photo cleaner apps with a one-time purchase (checked 8 November 2026, US App Store; made by the Photo Cleaner developer) ===
+https://getphotocleaner.com/compare/photo-cleaner-apps-one-time-purchase.html
+Yes, you can clean up iPhone photos without a subscription. Photo Cleaner: Swipe Cleanup and Clever Cleaner sell a one-time lifetime purchase; Cleanup lists a "Lifetime Subscription" in its description (its listed in-app purchases show weekly and yearly only); Remo Duplicate Photos Remover lists no in-app purchases. Swipewipe and CleanMy(R)Phone (formerly Gemini Photos, same listing) document no lifetime purchase. Slidebox had no App Store listing (ID 984305203) on that date. Photo Cleaner is the only app in the table whose listing documents swipe sorting, duplicates, blur detection and a lifetime purchase together.
+Photo Cleaner deletion flow: swipe left = Trash Bin (restorable), emptying it triggers the iOS confirmation, then Recently Deleted keeps items 30 days.
+Photo Cleaner Lifetime unlocks the same Pro as the subscriptions. To switch from a subscription: cancel in Settings > your name > Subscriptions; when the period ends, Settings > See Pro plans > Lifetime. Reinstall or new device: Restore purchases with the same Apple Account. The 100 free deletions are one time and do not reset on reinstall on the same iPhone.
+
 ## Author and local tool
 - [About the developer](https://getphotocleaner.com/about.html)
 - [Photo storage calculator](https://getphotocleaner.com/tools/storage-calculator.html): counts × assumed MB per item, divided by 1,000 for decimal GB. No scan or upload; estimates file bytes, not recoverable local storage.

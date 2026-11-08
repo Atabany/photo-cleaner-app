@@ -12,6 +12,8 @@ Status: `todo` | `done (date, path)`. Existing pages are listed as done.
 - done (2026-10-03, compare/best-photo-cleaner-apps-iphone.html) — best photo cleaner apps for iPhone
 - done (2026-10-03, compare/swipewipe-alternative.html) — Swipewipe alternative
 - done (2026-10-03, compare/slidebox-alternative.html) — Slidebox alternative
+- done (2026-11-08, compare/photo-cleaner-apps-one-time-purchase.html) — photo cleaner apps with a one-time (lifetime) purchase instead of a subscription
+- done (2026-11-08, press.html) (trust) — press kit: boilerplate, facts, icon, screenshots, App Store preview video
 - done (2026-10-18, tools/storage-calculator.html) (tool page) — iPhone photo storage calculator: how much space N photos / minutes of 4K or
   1080p video / Live Photos take, and what clearing duplicates/screenshots would free; local-only JS
   with a server-rendered reference table that works without JS; link into the app → tools/storage-calculator.html

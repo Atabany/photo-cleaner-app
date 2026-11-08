@@ -26,6 +26,7 @@ Photo Cleaner (App Store name "Photo Cleaner: Swipe Cleanup") is in the Utilitie
 ## Comparisons
 
 - [Best photo cleaner apps (2026)](https://getphotocleaner.com/compare/best-photo-cleaner-apps-iphone.html): An honest 2026 comparison of Apple Photos, Photo Cleaner, Swipewipe, Slidebox, Cleanup and CleanMy®Phone: swiping, duplicates, blur, large videos.
+- [Photo cleaner apps with a one-time purchase](https://getphotocleaner.com/compare/photo-cleaner-apps-one-time-purchase.html): Which iPhone photo cleaners sell a lifetime purchase instead of a subscription (Photo Cleaner, Clever Cleaner; Cleanup mentions one), checked on the App Store 8 November 2026, with the Trash Bin safety model and a lifetime-vs-subscription FAQ.
 - [Swipewipe alternative](https://getphotocleaner.com/compare/swipewipe-alternative.html): Like swiping to clean photos? Photo Cleaner adds duplicate grouping, blur detection and largest-files sorting, all on-device. A fair comparison.
 - [Slidebox alternative](https://getphotocleaner.com/compare/slidebox-alternative.html): Slidebox is great for sorting albums. Photo Cleaner focuses on clearing space: duplicates, blurry shots and large videos, on-device. Fair comparison.
 
