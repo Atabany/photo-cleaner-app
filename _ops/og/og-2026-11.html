@@ -1,0 +1,55 @@
+<!doctype html>
+<!-- Source of assets/og-2026-11.png (1200x630). Render: open in headless Chrome at a 1200x630 viewport, DPR 1, and save a PNG screenshot (see _ops/SEO-PLAYBOOK.md, "OG image"). Uses only real assets: app icon, phone cut-outs from the 2.2.0 store screenshots, the official badge. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+    color: #fff;
+    background:
+      radial-gradient(520px 420px at 1010px 40px, rgba(148, 89, 245, 0.55), transparent 70%),
+      radial-gradient(460px 360px at 40px 640px, rgba(242, 92, 176, 0.22), transparent 70%),
+      linear-gradient(135deg, #0B1024 0%, #181742 100%);
+  }
+  .arc { position: absolute; inset: 0; width: 1200px; height: 630px; }
+  .copy { position: absolute; left: 72px; top: 70px; width: 600px; }
+  .id { display: flex; align-items: center; gap: 18px; }
+  .id img { width: 84px; height: 84px; border-radius: 19px; box-shadow: 0 10px 30px rgba(79, 125, 255, 0.45), 0 0 0 1px rgba(255,255,255,.1); }
+  .id b { display: block; font: 800 30px/1.1 ui-rounded, "SF Pro Rounded", -apple-system, sans-serif; letter-spacing: -0.01em; }
+  .id span { display: block; margin-top: 4px; color: #B094FF; font-size: 17px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+  h1 { margin: 34px 0 0; font: 800 64px/1.04 ui-rounded, "SF Pro Rounded", -apple-system, sans-serif; letter-spacing: -0.02em; }
+  .grad { background: linear-gradient(90deg, #4F7DFF 0%, #9459F5 55%, #F25CB0 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  p { margin: 22px 0 0; color: #D9DCEB; font-size: 25px; line-height: 1.4; }
+  .cta { position: absolute; left: 72px; bottom: 64px; display: flex; align-items: center; gap: 18px; }
+  .cta img { height: 56px; width: auto; display: block; }
+  .cta span { color: #A9B0CC; font-size: 19px; font-weight: 600; }
+  .phones { position: absolute; right: 40px; top: 70px; width: 470px; height: 560px; }
+  .phones img { position: absolute; width: 268px; height: auto; filter: drop-shadow(0 30px 50px rgba(0,0,0,.55)); }
+  .p1 { left: 0; top: 70px; transform: rotate(-5deg); }
+  .p2 { right: 0; top: 0; transform: rotate(4deg); }
+</style>
+</head>
+<body>
+<svg class="arc" viewBox="0 0 1200 630" aria-hidden="true">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#4F7DFF"/><stop offset=".55" stop-color="#9459F5"/><stop offset="1" stop-color="#F25CB0"/></linearGradient>
+    <filter id="b" x="-10%" y="-40%" width="120%" height="180%"><feGaussianBlur stdDeviation="22"/></filter>
+  </defs>
+  <path d="M-80 600 Q 760 690 1280 40" fill="none" stroke="url(#g)" stroke-width="34" stroke-linecap="round" opacity=".55" filter="url(#b)"/>
+  <path d="M-80 600 Q 760 690 1280 40" fill="none" stroke="url(#g)" stroke-width="2.4" stroke-linecap="round" opacity=".75"/>
+</svg>
+<div class="phones">
+  <img class="p1" src="../../assets/store/phone-swipe-720.webp" alt="">
+  <img class="p2" src="../../assets/store/phone-duplicates-720.webp" alt="">
+</div>
+<div class="copy">
+  <div class="id"><img src="../../assets/app-icon-180.webp" alt=""><div><b>Photo Cleaner</b><span>Swipe Cleanup · iPhone &amp; iPad</span></div></div>
+  <h1>Clean up your<br>iPhone photos<br><span class="grad">with a swipe</span></h1>
+  <p>Duplicates, blurry shots and big videos.<br>100% on-device. No account.</p>
+</div>
+<div class="cta"><img src="../../assets/app-store-badge.svg" alt=""><span>Free to download</span></div>
+</body>
+</html>

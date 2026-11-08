@@ -272,6 +272,19 @@ a.card:hover { border-color: rgba(176, 148, 255, 0.45); background: var(--card-2
 .strip::-webkit-scrollbar-thumb { background: rgba(176, 148, 255, 0.45); border-radius: 8px; }
 .strip::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.05); border-radius: 8px; margin: 0 var(--pad); }
 @media (min-width: 900px) { .strip li { width: 236px; } }
+.strip-wrap { position: relative; }
+.strip-btn {
+  position: absolute; z-index: 2; top: calc(50% - .35rem); transform: translateY(-50%);
+  display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; cursor: pointer;
+  border: 1px solid var(--line-2); background: rgba(21, 25, 51, 0.92); color: var(--text);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+.strip-btn:hover { background: #242A52; }
+.strip-btn[disabled] { opacity: 0; pointer-events: none; }
+.strip-btn svg { width: 18px; height: 18px; }
+.strip-prev { left: -12px; }
+.strip-next { right: -12px; }
+@media (hover: none), (max-width: 899px) { .strip-btn { display: none; } }
 
 /* ---------- Home: feature cards with real phone screens ---------- */
 .features { display: grid; gap: 1rem; grid-template-columns: minmax(0, 1fr); }
@@ -442,9 +455,11 @@ tr.ours { background: rgba(148, 89, 245, 0.1); }
     bottom: calc(8px + env(safe-area-inset-bottom));
     box-shadow: 0 14px 44px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.4);
     transform: translateY(calc(100% + 24px)); visibility: hidden;
-    transition: transform .28s ease, visibility 0s linear .28s;
   }
-  .sticky-on .sticky-cta.is-shown { transform: none; visibility: visible; transition: transform .28s ease, visibility 0s; }
+  .sticky-on .sticky-cta.is-shown { transform: none; visibility: visible; }
+  /* transitions only after the first layout, so the bar never flashes on load */
+  .sticky-ready .sticky-cta { transition: transform .28s ease, visibility 0s linear .28s; }
+  .sticky-ready .sticky-cta.is-shown { transition: transform .28s ease, visibility 0s; }
   .sticky-on .site-footer { padding-bottom: calc(6.5rem + env(safe-area-inset-bottom)); }
 }
 @media (max-width: 379px) {

@@ -3,6 +3,7 @@
 //    after the page has loaded and the phone is on screen. Reduced motion or Save-Data keeps the
 //    poster (the button still lets people play it). Visible pause control (WCAG 2.2.2).
 // 2. Sticky download bar on small screens, shown once the hero has scrolled away. Dismissible.
+// 3. Previous/next buttons for the screenshot strip on pointer devices (the strip scrolls without them).
 (function () {
   "use strict";
   var doc = document.documentElement;
@@ -97,6 +98,7 @@
       bar.classList.toggle("is-shown", past && !anyVisible);
     }
     doc.classList.add("sticky-on");
+    if (window.requestAnimationFrame) requestAnimationFrame(function () { requestAnimationFrame(function () { doc.classList.add("sticky-ready"); }); });
     new IntersectionObserver(function (entries) {
       var e = entries[0];
       past = !e.isIntersecting && e.boundingClientRect.top < 0;
@@ -116,12 +118,42 @@
       close.addEventListener("click", function () {
         bar.classList.remove("is-shown");
         bar.hidden = true;
-        doc.classList.remove("sticky-on");
+        doc.classList.remove("sticky-on", "sticky-ready");
         try { sessionStorage.setItem(KEY, "1"); } catch (e) {}
       });
     }
   }
 
+  function initStrip(wrap) {
+    var strip = wrap.querySelector(".strip");
+    if (!strip || !strip.scrollBy) return;
+    function button(cls, label, d) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "strip-btn " + cls;
+      b.setAttribute("aria-label", label);
+      b.innerHTML = '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="' + d + '" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+      wrap.appendChild(b);
+      return b;
+    }
+    var prev = button("strip-prev", "Previous screenshots", "M10 3L5 8l5 5");
+    var next = button("strip-next", "Next screenshots", "M6 3l5 5-5 5");
+    function go(dir) {
+      strip.scrollBy({ left: dir * strip.clientWidth * 0.8, behavior: reduceMotion.matches ? "auto" : "smooth" });
+    }
+    function update() {
+      prev.disabled = strip.scrollLeft <= 2;
+      next.disabled = strip.scrollLeft + strip.clientWidth >= strip.scrollWidth - 2;
+    }
+    prev.addEventListener("click", function () { go(-1); });
+    next.addEventListener("click", function () { go(1); });
+    strip.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update);
+    update();
+  }
+
+  var strips = document.querySelectorAll(".strip-wrap");
+  for (var s = 0; s < strips.length; s++) initStrip(strips[s]);
   var boxes = document.querySelectorAll("[data-video]");
   for (var i = 0; i < boxes.length; i++) initVideo(boxes[i]);
   var bar = document.querySelector(".sticky-cta");
