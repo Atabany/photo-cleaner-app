@@ -3,12 +3,16 @@
 
 Checks: internal links/assets resolve; JSON-LD parses; one <h1>; title ≤ 60 and meta description
 ≤ 155; canonical points at https://getphotocleaner.com/; every indexable page is in sitemap.xml
-and llms.txt; images have alt/width/height; banned strings; free-tier wording.
+and llms.txt; images have alt/width/height; banned strings; free-tier wording; shared chrome
+(header, footer, sticky bar, head assets) present and identical to _ops/chrome/<lang>.html.
 """
 import json, pathlib, re, sys
 from html.parser import HTMLParser
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
+sys.dont_write_bytecode = True
+sys.path.insert(0, str(ROOT / "_ops"))
+import sync_chrome  # noqa: E402
 BASE = "https://getphotocleaner.com/"
 BANNED = [r"swift ?sweep", r"\bclarity\b", r"ai-powered", r"\$\d", r"50 (free )?deletions", r"per week", r"every week"]
 problems = []
@@ -56,6 +60,11 @@ for f in sorted(ROOT.rglob("*.html")):
     for raw in p.ld:
         try: json.loads(raw)
         except Exception as e: problems.append(f"{rel}: JSON-LD invalid ({e})")
+    try:
+        if sync_chrome.sync(html, rel) != html:
+            problems.append(f"{rel}: shared chrome missing or out of date (run python3 _ops/sync_chrome.py)")
+    except SystemExit as e:
+        problems.append(f"{rel}: {e}")
     if rel == "404.html" or p.noindex: continue
     if p.h1 != 1: problems.append(f"{rel}: {p.h1} <h1> elements")
     if not p.title or len(p.title.strip()) > 60: problems.append(f"{rel}: title length {len(p.title.strip())}")

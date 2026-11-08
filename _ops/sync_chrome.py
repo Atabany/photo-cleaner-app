@@ -24,6 +24,7 @@ import re
 import sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
+sys.dont_write_bytecode = True  # no _ops/__pycache__ in the published site
 sys.path.insert(0, str(ROOT / "_ops"))
 from appstore_campaign import tag_for  # noqa: E402
 

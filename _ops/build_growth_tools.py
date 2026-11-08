@@ -110,4 +110,5 @@ for name in ['llms.txt', 'llms-full.txt']:
         text += '\n## Author and local tool\n- [About the developer](' + BASE + 'about.html)\n- [Photo storage calculator](' + BASE + 'tools/storage-calculator.html): counts × assumed MB per item, divided by 1,000 for decimal GB. No scan or upload; estimates file bytes, not recoverable local storage.\n'
         p.write_text(text)
 subprocess.run([sys.executable, str(ROOT / '_ops/appstore_campaign.py')], check=True)
+subprocess.run([sys.executable, str(ROOT / '_ops/sync_chrome.py')], check=True)  # restore the shared chrome (2026-11)
 print('Added author page, local calculator and internal discovery links.')
