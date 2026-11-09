@@ -69,6 +69,10 @@ Deleted photos and videos stay in Photos > Utilities > Recently Deleted for 30 d
 https://getphotocleaner.com/guides/mass-delete-photos-iphone.html
 In Photos, open your library or a collection, tap Select, drag sideways along a row and then down to select many photos, tap the trash button and confirm. Items go to Recently Deleted for 30 days and keep using storage until deleted from there. Apple's iPhone guide documents no Select All for the Library. With iCloud Photos on, deletions apply to all devices on the same Apple Account. In a user album, Remove from Album leaves the photo in the library. Photo Cleaner builds a batch by swiping: left to delete, right to keep, then Trash Bin, Select All, Delete [number] Photos and the iOS confirmation. The free allowance is 100 deletions, one time.
 
+=== GUIDE: How to delete burst photos on iPhone ===
+https://getphotocleaner.com/guides/delete-burst-photos-iphone.html
+Open the burst in Photos, tap Select, tick the frames to keep, tap Done and choose Keep Only your favorites; the rest go to Recently Deleted for 30 days. Bursts are collected in the Bursts album under Media Types; to delete whole bursts select their thumbnails and tap the trash icon. Volume Up bursts need Settings > Camera > Use Volume Up for Burst. Photo Cleaner has a Bursts category: swipe left to delete, right to keep, then review the Trash Bin and confirm. 100 free deletions, one time.
+
 === COMPARISON (checked October 2026; made by the Photo Cleaner developer) ===
 https://getphotocleaner.com/compare/best-photo-cleaner-apps-iphone.html
 Apple Photos (built in): free; Duplicates album merges identical copies; no swipe review, no similar-shot grouping, no blur detection, no sort by size.

@@ -22,6 +22,7 @@ Photo Cleaner (App Store name "Photo Cleaner: Swipe Cleanup") is in the Utilitie
 - [iPhone storage full with iCloud Photos](https://getphotocleaner.com/guides/iphone-storage-full-icloud-photos.html): Device vs iCloud storage, what Optimize iPhone Storage does, why deleting syncs to iCloud, and how Recently Deleted's 30 days work.
 - [Empty or recover Recently Deleted photos on iPhone](https://getphotocleaner.com/guides/recently-deleted-photos-iphone.html): Recently Deleted keeps photos 30 days. How to empty it to free storage, recover photos, and what cannot be undone. iOS 17, 18 and 26.
 - [Mass delete photos on iPhone](https://getphotocleaner.com/guides/mass-delete-photos-iphone.html): Tap Select and drag across the grid to delete many photos at once, what iCloud Photos does, and how to get the storage back. iOS 17 to 27.
+- [Delete burst photos on iPhone](https://getphotocleaner.com/guides/delete-burst-photos-iphone.html): Open a burst, tap Select, pick favorites and Keep Only them, or clear the Bursts album; the rest go to Recently Deleted for 30 days. iOS 17 to 26.
 
 ## Comparisons
 

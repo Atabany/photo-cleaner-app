@@ -23,7 +23,7 @@ Status: `todo` | `done (date, path)`. Existing pages are listed as done.
 - todo — how to delete similar photos on iPhone (keep the best shot) → guides/delete-similar-photos-iphone.html
 - done (2026-11-04, guides/mass-delete-photos-iphone.html) — how to mass delete photos on iPhone (select many fast)
 - done (2026-10-12, guides/recently-deleted-photos-iphone.html) — how to empty Recently Deleted on iPhone (and recover photos)
-- todo — how to delete burst photos on iPhone → guides/delete-burst-photos-iphone.html
+- done (2026-11-09, guides/delete-burst-photos-iphone.html) — how to delete burst photos on iPhone
 - todo — how to delete WhatsApp photos from iPhone gallery → guides/delete-whatsapp-photos-iphone.html
 - todo — Live Photos taking up space: convert or delete → guides/live-photos-storage-iphone.html
 - todo — how to organize photos on iPhone (albums, favorites, month by month) → guides/organize-photos-iphone.html
