@@ -71,6 +71,15 @@ for f in sorted(ROOT.rglob("*.html")):
     for b in BANNED:
         if re.search(b, text): problems.append(f"{rel}: banned/outdated phrase /{b}/")
 
+# Every guide and comparison must be linked from every page's footer (new pages were under-linked before).
+content = sorted(f.relative_to(ROOT).as_posix() for d in ("guides", "compare") for f in (ROOT / d).glob("*.html"))
+for f in sorted(ROOT.rglob("*.html")):
+    rel = f.relative_to(ROOT).as_posix()
+    if rel.startswith("_ops/") or re.match(r"google[0-9a-f]+\.html", rel): continue
+    footer = f.read_text().split("<footer", 1)[-1]
+    for c in content:
+        if c + '"' not in footer: problems.append(f"{rel}: footer does not link {c}")
+
 for txt in ("llms.txt", "llms-full.txt", "robots.txt"):
     t = (ROOT / txt).read_text().lower()
     for b in BANNED:

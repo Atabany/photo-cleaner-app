@@ -43,6 +43,8 @@ page ChatGPT, Perplexity, Gemini, Claude and Copilot quote and recommend.
      Photo Cleaner helps. Honest: say when the built-in way is enough.
    - 800–1,300 words, H2/H3 question-style headings, numbered steps, a short FAQ (3–5 Q&As) at the end.
    - Unique `<title>` ≤ 60 chars with the main query; meta description ≤ 155 chars.
+   - Add the new page to the footer Guides (or Compare) list of **every** page, same order everywhere;
+     `validate.py` fails until every footer links every guide and comparison.
    - 3+ internal links to related guides, and add a link TO the new page from 2+ existing pages
      (related-guides lists) and from index.html's guides section if it has one.
    - No keyword stuffing, no fluff, no fake numbers. Cite Apple Support URLs for iOS steps.
@@ -97,3 +99,9 @@ Known issues, not changed: (1) The lookup lists 10 languages (EN FR DE IT JA KO 
 
 On the comparison page a scoped `.onetime` rule lets app names wrap (shared CSS sets `tbody th` to nowrap), so all 7 columns fit at 1280 px. At 390 px the table scrolls inside its box, like the best-apps table. Both pages were read at 1280 px and at a true 390 px viewport.
 
+
+## 2026-11-12 — internal links and domain check
+
+Footer Guides and Compare lists are now identical on all 22 pages (10 guides, 4 comparisons). Before this the burst guide had 4 inbound internal links, the one-time-purchase comparison 5 and mass delete 7, against 20 for older pages; two footers labelled "Delete blurry photos" pointed at the wrong page. `validate.py` now fails when a footer misses a guide or comparison. Article JSON-LD author and publisher URLs point to `about.html` on every guide and comparison.
+
+Domain reviewed the same day at the owner's request: keep getphotocleaner.com. Record: app repo `docs/KB.md`, "Website — domain review, 12 November 2026".
