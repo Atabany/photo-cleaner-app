@@ -17,7 +17,7 @@ page ChatGPT, Perplexity, Gemini, Claude and Copilot quote and recommend.
   App Store links: always Apple's campaign format `https://apps.apple.com/app/apple-store/id6746700862?pt=127826363&ct=<tag>&mt=8`
   — run `python3 _ops/appstore_campaign.py` after adding a page (sets one tag per page; App Analytics
   → Sources → Web/Campaigns attributes downloads, after Apple's privacy thresholds).
-- iPhone and iPad, iOS 17 or later. Languages: EN, FR, DE, JA, RU, ZH-Hans, ES (+ IT, PT, KO, AR listings).
+- iPhone and iPad, iOS 17 or later. Languages (10, per the App Store lookup `languageCodesISO2A`): EN, FR, DE, IT, JA, KO, PT, RU, ZH-Hans, ES.
 - Swipe left to delete, right to keep. Nothing is deleted until you review the **Trash Bin** and
   confirm in the iOS dialog; then iOS keeps items in **Recently Deleted** for 30 days.
 - Similars / Duplicates (groups near-identical shots, marks the best one), Blur Detection
@@ -53,6 +53,8 @@ page ChatGPT, Perplexity, Gemini, Claude and Copilot quote and recommend.
      Photo Cleaner helps. Honest: say when the built-in way is enough.
    - 800–1,300 words, H2/H3 question-style headings, numbered steps, a short FAQ (3–5 Q&As) at the end.
    - Unique `<title>` ≤ 60 chars with the main query; meta description ≤ 155 chars.
+   - Add the new page to the footer Guides (or Compare) list of **every** page, same order everywhere;
+     `validate.py` fails until every footer links every guide and comparison.
    - 3+ internal links to related guides, and add a link TO the new page from 2+ existing pages
      (related-guides lists), from index.html's guides section, and from the footer's Guides list in
      `_ops/chrome/en.html` (then run `python3 _ops/sync_chrome.py`).
@@ -150,3 +152,24 @@ Verified: validator OK, desktop 1280 and true 390 px read, no horizontal overflo
 Known issues, not changed: `guides/recently-deleted-photos-iphone.html` has a footer link labelled "Delete blurry photos on iPhone" that points to itself. Open owner decision: the site shows 4.6 from 35 US ratings (lookup rule above), while the app repo recorded a rule on 2026-10-22 to show the App Store Connect global value (4.7 from 118 as of 2026-10-04). This run did not choose between them.
 
 Source flow: this repo was ahead of `site/` in the app repo, so the guide was written here and `site/` was then mirrored from it. Edit here or in `site/`, then copy across in the same run.
+
+## 2026-11-08 — press kit and one-time purchase comparison
+
+Owner asked for two pages. `press.html`: one-sentence description, 60-word boilerplate, facts, the Trash Bin model, features, 8 screenshots, the 2.2.0 App Store preview and the icon. Assets live in `assets/press/` (9.2 MB): icon at 1024 and 512 from the app's icon source, JPEG screenshots at 736 x 1600 (quality 80), `app-preview-en.mp4` (6.7 MB) and a poster frame. A zip of the original PNGs would be 23.5 MB, over the 20 MB limit, so the page offers the PNGs on request. `compare/photo-cleaner-apps-one-time-purchase.html` answers the "lifetime purchase instead of subscription" query in its lead, then covers the Trash Bin, the table, notes, the built-in Duplicates album, how to decide, how to buy and an FAQ. The campaign tags are `web-press` and `web-c-onetime` (set in `TAG_OVERRIDES`, same `web-` convention as every other page).
+
+The competitor cells come only from each app's US App Store page and lookup data, read on 8 November. Clever Cleaner (id1666645584) lists a "Clever Cleaner Lifetime" purchase. Cleanup (id1510944943) names a "Lifetime Subscription" in its description, but its listed purchases show weekly and yearly plans only. Remo (id1066797785) lists no in-app purchases. Swipewipe (id1583884012) shows a "Premium" purchase with no stated term, so it got "—". CleanMy®Phone (id1277110040) is the former Gemini Photos: its purchases are still named "Gemini Photos: ..." and the developer's review replies use that name. Slidebox (id984305203, linked from slidebox.co) returned no listing in the US, GB, CA, AU or DE stores. App facts were checked in the app source at 2.2.0: Pro users never see the paywall (header shows a Pro badge), the Settings label is "See Pro plans", the Lifetime plan reads "Pay once, own forever", and the free-tier counter is kept in the keychain with ThisDeviceOnly. Live lookup: 2.2.0, 4.6 from 35 US ratings, unchanged.
+
+Known issues, not changed: (1) The lookup lists 10 languages (EN FR DE IT JA KO PT RU ZH ES) and the app ships full `it`, `ko` and `pt-BR` strings, so the press page says 10. The Facts list above, the home FAQ and llms files still say 7. (2) `slidebox-alternative.html` and the best-apps page still describe Slidebox as available. (3) Swipewipe's listing now documents similar photos and blurry shots, but the Swipewipe and best-apps tables still show "—" for them. (4) The only published contact is circular: the App Store "App Support" link goes to `atabany.github.io/photo-cleaner-app/support.html`, which 301s to `support.html`, and that page tells readers to use App Support. The site publishes no email address. The press page uses the same wording, so the owner needs to decide on a press contact.
+
+On the comparison page a scoped `.onetime` rule lets app names wrap (shared CSS sets `tbody th` to nowrap), so all 7 columns fit at 1280 px. At 390 px the table scrolls inside its box, like the best-apps table. Both pages were read at 1280 px and at a true 390 px viewport.
+
+
+## 2026-11-12 — internal links and domain check
+
+Footer Guides and Compare lists are now identical on all 22 pages (10 guides, 4 comparisons). Before this the burst guide had 4 inbound internal links, the one-time-purchase comparison 5 and mass delete 7, against 20 for older pages; two footers labelled "Delete blurry photos" pointed at the wrong page. `validate.py` now fails when a footer misses a guide or comparison. Article JSON-LD author and publisher URLs point to `about.html` on every guide and comparison.
+
+Domain reviewed the same day at the owner's request: keep getphotocleaner.com. Record: app repo `docs/KB.md`, "Website — domain review, 12 November 2026".
+
+## 2026-11-12 — redesign merged with main
+
+`redesign-2026-11` was merged with `main` (press kit, one-time-purchase comparison, burst guide, full footer lists). The three newer pages were migrated to the shared chrome by `sync_chrome.py`; the template footer now lists 10 guides, 4 comparisons and the press kit, and the home page has the burst card and the one-time-purchase link. Checked: validator OK, all 22 pages at a true 390 px viewport with no horizontal overflow, home / press / one-time / burst read at 390 and 1280. Press kit and llms-full now say version 2.3.0 (live lookup).

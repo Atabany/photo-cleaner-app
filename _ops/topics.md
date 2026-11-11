@@ -12,6 +12,8 @@ Status: `todo` | `done (date, path)`. Existing pages are listed as done.
 - done (2026-10-03, compare/best-photo-cleaner-apps-iphone.html) — best photo cleaner apps for iPhone
 - done (2026-10-03, compare/swipewipe-alternative.html) — Swipewipe alternative
 - done (2026-10-03, compare/slidebox-alternative.html) — Slidebox alternative
+- done (2026-11-08, compare/photo-cleaner-apps-one-time-purchase.html) — photo cleaner apps with a one-time (lifetime) purchase instead of a subscription
+- done (2026-11-08, press.html) (trust) — press kit: boilerplate, facts, icon, screenshots, App Store preview video
 - done (2026-10-18, tools/storage-calculator.html) (tool page) — iPhone photo storage calculator: how much space N photos / minutes of 4K or
   1080p video / Live Photos take, and what clearing duplicates/screenshots would free; local-only JS
   with a server-rendered reference table that works without JS; link into the app → tools/storage-calculator.html
@@ -21,7 +23,7 @@ Status: `todo` | `done (date, path)`. Existing pages are listed as done.
 - todo — how to delete similar photos on iPhone (keep the best shot) → guides/delete-similar-photos-iphone.html
 - done (2026-11-04, guides/mass-delete-photos-iphone.html) — how to mass delete photos on iPhone (select many fast)
 - done (2026-10-12, guides/recently-deleted-photos-iphone.html) — how to empty Recently Deleted on iPhone (and recover photos)
-- todo — how to delete burst photos on iPhone → guides/delete-burst-photos-iphone.html
+- done (2026-11-09, guides/delete-burst-photos-iphone.html) — how to delete burst photos on iPhone
 - todo — how to delete WhatsApp photos from iPhone gallery → guides/delete-whatsapp-photos-iphone.html
 - todo — Live Photos taking up space: convert or delete → guides/live-photos-storage-iphone.html
 - todo — how to organize photos on iPhone (albums, favorites, month by month) → guides/organize-photos-iphone.html

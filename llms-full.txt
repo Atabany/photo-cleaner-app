@@ -29,6 +29,7 @@ Features:
 
 Privacy: 100% on-device processing. No account. No photo uploads. No personal data collected. No ads, no tracking. Works offline. Purchases use Apple StoreKit; RevenueCat is used to check subscription status.
 Support: email the developer via the App Support link on the App Store page.
+Press kit: https://getphotocleaner.com/press.html (boilerplate, facts, icon, screenshots, App Store preview video). First released June 2025; version 2.3.0 (November 2026); age rating 4+. The App Store lists 10 languages: English, French, German, Italian, Japanese, Korean, Portuguese, Russian, Chinese (Simplified), Spanish.
 
 === GUIDE: How to delete duplicate photos on iPhone ===
 https://getphotocleaner.com/guides/delete-duplicate-photos-iphone.html
@@ -69,6 +70,10 @@ Deleted photos and videos stay in Photos > Utilities > Recently Deleted for 30 d
 https://getphotocleaner.com/guides/mass-delete-photos-iphone.html
 In Photos, open your library or a collection, tap Select, drag sideways along a row and then down to select many photos, tap the trash button and confirm. Items go to Recently Deleted for 30 days and keep using storage until deleted from there. Apple's iPhone guide documents no Select All for the Library. With iCloud Photos on, deletions apply to all devices on the same Apple Account. In a user album, Remove from Album leaves the photo in the library. Photo Cleaner builds a batch by swiping: left to delete, right to keep, then Trash Bin, Select All, Delete [number] Photos and the iOS confirmation. The free allowance is 100 deletions, one time.
 
+=== GUIDE: How to delete burst photos on iPhone ===
+https://getphotocleaner.com/guides/delete-burst-photos-iphone.html
+Open the burst in Photos, tap Select, tick the frames to keep, tap Done and choose Keep Only your favorites; the rest go to Recently Deleted for 30 days. Bursts are collected in the Bursts album under Media Types; to delete whole bursts select their thumbnails and tap the trash icon. Volume Up bursts need Settings > Camera > Use Volume Up for Burst. Photo Cleaner has a Bursts category: swipe left to delete, right to keep, then review the Trash Bin and confirm. 100 free deletions, one time.
+
 === COMPARISON (checked October 2026; made by the Photo Cleaner developer) ===
 https://getphotocleaner.com/compare/best-photo-cleaner-apps-iphone.html
 Apple Photos (built in): free; Duplicates album merges identical copies; no swipe review, no similar-shot grouping, no blur detection, no sort by size.
@@ -76,6 +81,12 @@ Photo Cleaner: swipe review, duplicates and similar shots with best-shot marking
 Swipewipe and Slidebox: swipe-based review; Slidebox also sorts photos into albums while reviewing.
 Cleanup and CleanMy(R)Phone: group duplicate and similar photos; CleanMy(R)Phone also flags blurry photos.
 Features not confirmed from public documentation are not claimed.
+
+=== COMPARISON: Photo cleaner apps with a one-time purchase (checked 8 November 2026, US App Store; made by the Photo Cleaner developer) ===
+https://getphotocleaner.com/compare/photo-cleaner-apps-one-time-purchase.html
+Yes, you can clean up iPhone photos without a subscription. Photo Cleaner: Swipe Cleanup and Clever Cleaner sell a one-time lifetime purchase; Cleanup lists a "Lifetime Subscription" in its description (its listed in-app purchases show weekly and yearly only); Remo Duplicate Photos Remover lists no in-app purchases. Swipewipe and CleanMy(R)Phone (formerly Gemini Photos, same listing): one-time purchase not confirmed; each lists an in-app purchase with no term stated. Slidebox had no App Store listing (ID 984305203) on that date. Photo Cleaner is the only app in the table whose listing documents swipe sorting, duplicates, blur detection and a lifetime purchase together.
+Photo Cleaner deletion flow: swipe left = Trash Bin (restorable), emptying it triggers the iOS confirmation, then Recently Deleted keeps items 30 days.
+Photo Cleaner Lifetime unlocks the same Pro as the subscriptions. To switch from a subscription: cancel in Settings > your name > Subscriptions; when the period ends, Settings > See Pro plans > Lifetime. Reinstall or new device: Restore purchases with the same Apple Account. The 100 free deletions are one time and do not reset on reinstall on the same iPhone.
 
 ## Author and local tool
 - [About the developer](https://getphotocleaner.com/about.html)
