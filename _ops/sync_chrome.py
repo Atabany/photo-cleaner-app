@@ -69,10 +69,27 @@ def mark_current(html, rel):
     return re.sub(r'<a (?:class="[^"]*" )?href="([^"]+)"', fix, html)
 
 
+LANG_NAMES = (("en", "English"), ("fr", "Français"), ("de", "Deutsch"), ("es", "Español"))
+
+
+def lang_links(rel, root):
+    """{langs}: the same page in each language (that language's home page when it has no copy)."""
+    first, _, rest = rel.partition("/")
+    here, base = (first, rest) if first in dict(LANG_NAMES) and first != "en" else ("en", rel)
+    items = []
+    for code, name in LANG_NAMES:
+        prefix = "" if code == "en" else code + "/"
+        target = prefix + base if (ROOT / (prefix + base)).exists() else prefix + "index.html"
+        cur = ' aria-current="true"' if code == here else ""
+        items.append(f'<a href="{root}{target}" lang="{code}" hreflang="{code}"{cur}>{name}</a>')
+    return '<p class="langs">' + " · ".join(items) + "</p>"
+
+
 def render(block, rel):
     root = "../" * rel.count("/")
     out = block.replace("{root}", root).replace("{ct}", tag_for(ROOT / rel))
-    return mark_current(out, rel)
+    out = mark_current(out, rel)
+    return out.replace("{langs}", lang_links(rel, root))
 
 
 def migrate(s, name, rel):

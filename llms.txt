@@ -42,3 +42,9 @@ Other App Store apps also use the name "Photo Cleaner". Everything on this site 
 ## Author and local tool
 - [About the developer](https://getphotocleaner.com/about.html)
 - [Photo storage calculator](https://getphotocleaner.com/tools/storage-calculator.html): counts × assumed MB per item, divided by 1,000 for decimal GB. No scan or upload; estimates file bytes, not recoverable local storage.
+
+## Other languages
+The home page, every guide, every comparison, the storage calculator, About and Support are also available in French, German and Spanish at the same paths under /fr/, /de/ and /es/. The facts are identical to the English pages.
+- [Photo Cleaner en français](https://getphotocleaner.com/fr/)
+- [Photo Cleaner auf Deutsch](https://getphotocleaner.com/de/)
+- [Photo Cleaner en español](https://getphotocleaner.com/es/)

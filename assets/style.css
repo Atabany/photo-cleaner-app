@@ -472,6 +472,9 @@ tr.ours { background: rgba(148, 89, 245, 0.1); }
 .site-footer li { margin: .2rem 0; color: var(--muted); }
 .site-footer nav a { display: inline-block; padding: .15rem 0; color: var(--muted); text-decoration: none; }
 .site-footer a:hover { color: var(--text); text-decoration: underline; }
+.site-footer .langs { margin: 2rem 0 0; font-size: .9rem; color: var(--muted); }
+.site-footer .langs a[aria-current] { color: var(--text, #D9DCEB); font-weight: 600; text-decoration: none; }
+.site-footer .langs + .legal { margin-top: .75rem; }
 .site-footer .legal { margin: 2rem 0 0; color: var(--muted); font-size: .84rem; }
 
 /* ---------- Motion ---------- */
