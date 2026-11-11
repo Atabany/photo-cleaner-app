@@ -1,0 +1,89 @@
+<!-- Shared page chrome for every French page (fr/). Edit this file, then run: python3 _ops/sync_chrome.py
+     Placeholders: {root} = path from the page to the site root ("../" or "../../"),
+                   {ct}   = the page's App Store campaign tag (appstore_campaign.py rule).
+     Each block below is copied between <!-- chrome:NAME --> and <!-- /chrome:NAME --> on every page.
+     Translated pages link to {root}fr/...; assets stay {root}assets/...; English-only pages stay at the root. -->
+
+<!-- block:head -->
+<meta name="theme-color" content="#0B1024">
+<link rel="icon" type="image/png" sizes="32x32" href="{root}assets/favicon-32.png">
+<link rel="apple-touch-icon" href="{root}assets/apple-touch-icon.png">
+<link rel="stylesheet" href="{root}assets/style.css?v=3">
+<!-- /block:head -->
+
+<!-- block:header -->
+<a class="skip" href="#main">Aller au contenu</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="{root}fr/index.html"><img src="{root}assets/app-icon-180.webp" width="32" height="32" alt=""><span>Photo Cleaner</span></a>
+    <nav class="site-nav" aria-label="Menu principal">
+      <ul>
+        <li><a href="{root}fr/index.html#guides">Guides</a></li>
+        <li class="nav-md"><a href="{root}fr/compare/best-photo-cleaner-apps-iphone.html">Comparatifs</a></li>
+        <li class="nav-lg"><a href="{root}fr/tools/storage-calculator.html">Calculateur de stockage</a></li>
+        <li class="nav-lg"><a href="{root}fr/about.html">À propos</a></li>
+        <li class="nav-md"><a href="{root}fr/support.html">Assistance</a></li>
+      </ul>
+    </nav>
+    <a class="store-badge-sm" href="https://apps.apple.com/app/apple-store/id6746700862?pt=127826363&amp;ct={ct}&amp;mt=8"><img src="{root}assets/app-store-badge.svg" width="120" height="40" alt="Télécharger dans l’App Store"></a>
+  </div>
+</header>
+<!-- /block:header -->
+
+<!-- block:footer -->
+<div class="sticky-cta">
+  <img class="sticky-icon" src="{root}assets/app-icon-180.webp" width="40" height="40" alt="">
+  <p class="sticky-text"><strong>Photo Cleaner</strong><span>Gratuit sur l’App Store</span></p>
+  <a class="sticky-badge" href="https://apps.apple.com/app/apple-store/id6746700862?pt=127826363&amp;ct={ct}&amp;mt=8"><img src="{root}assets/app-store-badge.svg" width="120" height="40" alt="Télécharger Photo Cleaner dans l’App Store"></a>
+  <button class="sticky-close" type="button" aria-label="Masquer la barre de téléchargement" hidden><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3.5 3.5l9 9m0-9l-9 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+</div>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div class="footer-brand">
+        <a class="brand" href="{root}fr/index.html"><img src="{root}assets/app-icon-180.webp" width="32" height="32" alt="" loading="lazy" decoding="async"><span>Photo Cleaner</span></a>
+        <p class="muted small">Photo Cleaner: Swipe Cleanup par Mohamed Elatabany (identifiant App Store 6746700862). Balayez pour faire le tri dans la photothèque de votre iPhone&nbsp;: tout se passe sur l’appareil, sans compte ni envoi de photos.</p>
+        <a class="store-badge-sm" href="https://apps.apple.com/app/apple-store/id6746700862?pt=127826363&amp;ct={ct}&amp;mt=8"><img src="{root}assets/app-store-badge.svg" width="120" height="40" alt="Télécharger dans l’App Store" loading="lazy" decoding="async"></a>
+      </div>
+      <nav class="footer-guides" aria-label="Guides">
+        <h2>Guides</h2>
+        <ul>
+          <li><a href="{root}fr/guides/delete-duplicate-photos-iphone.html">Supprimer les photos en double sur iPhone</a></li>
+          <li><a href="{root}fr/guides/free-up-iphone-storage-photos.html">Libérer l’espace occupé par Photos sur iPhone</a></li>
+          <li><a href="{root}fr/guides/clean-up-camera-roll-fast.html">Nettoyer rapidement sa pellicule</a></li>
+          <li><a href="{root}fr/guides/delete-blurry-photos-iphone.html">Supprimer les photos floues sur iPhone</a></li>
+          <li><a href="{root}fr/guides/delete-screenshots-iphone.html">Supprimer les captures d’écran sur iPhone</a></li>
+          <li><a href="{root}fr/guides/find-large-videos-iphone.html">Trouver les vidéos lourdes sur iPhone</a></li>
+          <li><a href="{root}fr/guides/iphone-storage-full-icloud-photos.html">Stockage iPhone saturé avec Photos iCloud</a></li>
+          <li><a href="{root}fr/guides/recently-deleted-photos-iphone.html">Vider ou récupérer «&nbsp;Supprimées récemment&nbsp;»</a></li>
+          <li><a href="{root}fr/guides/mass-delete-photos-iphone.html">Supprimer des photos en masse sur iPhone</a></li>
+          <li><a href="{root}fr/guides/delete-burst-photos-iphone.html">Supprimer les rafales sur iPhone</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Comparatifs">
+        <h2>Comparatifs</h2>
+        <ul>
+          <li><a href="{root}fr/compare/best-photo-cleaner-apps-iphone.html">Meilleures apps de nettoyage photo (2026)</a></li>
+          <li><a href="{root}fr/compare/photo-cleaner-apps-one-time-purchase.html">Apps avec achat unique</a></li>
+          <li><a href="{root}fr/compare/swipewipe-alternative.html">Alternative à Swipewipe</a></li>
+          <li><a href="{root}fr/compare/slidebox-alternative.html">Alternative à Slidebox</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="À propos">
+        <h2>À propos</h2>
+        <ul>
+          <li><a href="{root}fr/index.html">Accueil</a></li>
+          <li><a href="{root}fr/about.html">À propos du développeur</a></li>
+          <li><a href="{root}fr/tools/storage-calculator.html">Calculateur de stockage</a></li>
+          <li><a href="{root}press.html">Kit presse (en anglais)</a></li>
+          <li><a href="{root}fr/support.html">Assistance</a></li>
+          <li><a href="{root}privacy.html">Politique de confidentialité (en anglais)</a></li>
+          <li><a href="{root}terms.html">Conditions d’utilisation (en anglais)</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="legal">© 2026 Mohamed Elatabany. Photo Cleaner n’est pas affilié à Apple Inc. iPhone, iPad, iCloud et App Store sont des marques d’Apple Inc. Les autres noms de produits appartiennent à leurs propriétaires respectifs.</p>
+  </div>
+</footer>
+<script src="{root}assets/main.js?v=4" defer></script>
+<!-- /block:footer -->
