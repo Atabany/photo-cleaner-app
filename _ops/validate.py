@@ -13,8 +13,12 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 sys.dont_write_bytecode = True
 sys.path.insert(0, str(ROOT / "_ops"))
 import sync_chrome  # noqa: E402
+import hreflang  # noqa: E402
+
+LANGS = hreflang.LANGS
+PAGE_LANG = lambda rel: rel.split('/')[0] if rel.split('/')[0] in LANGS else 'en'
 BASE = "https://getphotocleaner.com/"
-BANNED = [r"swift ?sweep", r"\bclarity\b", r"ai-powered", r"\$\d", r"50 (free )?deletions", r"per week", r"every week"]
+BANNED = [r"swift ?sweep", r"\bclarity\b", r"ai-powered", r"\$\d", r"\d ?€", r"€ ?\d", r"50 (free )?deletions", r"per week", r"every week"]
 problems = []
 
 
@@ -65,14 +69,20 @@ for f in sorted(ROOT.rglob("*.html")):
             problems.append(f"{rel}: shared chrome missing or out of date (run python3 _ops/sync_chrome.py)")
     except SystemExit as e:
         problems.append(f"{rel}: {e}")
+    if hreflang.sync(html, rel) != html:
+        problems.append(f"{rel}: hreflang block missing or out of date (run python3 _ops/hreflang.py)")
+    lang = PAGE_LANG(rel)
+    m = re.search(r'<html[^>]*\blang="([^"]+)"', html)
+    if not m or m.group(1).split("-")[0] != lang: problems.append(f"{rel}: <html lang> should be {lang}")
+    if lang != "en" and not (ROOT / rel.split("/", 1)[1]).exists(): problems.append(f"{rel}: no English page at the same path")
     if rel == "404.html" or p.noindex: continue
     if p.h1 != 1: problems.append(f"{rel}: {p.h1} <h1> elements")
     if not p.title or len(p.title.strip()) > 60: problems.append(f"{rel}: title length {len(p.title.strip())}")
     if not p.desc or len(p.desc) > 155: problems.append(f"{rel}: meta description length {len(p.desc or '')}")
-    url = BASE + ("" if rel == "index.html" else rel)
+    url = BASE + re.sub(r"(^|/)index\.html$", r"\1", rel)
     if p.canon != url: problems.append(f"{rel}: canonical {p.canon} != {url}")
     if url not in sitemap: problems.append(f"{rel}: missing from sitemap.xml")
-    if rel != "index.html" and url not in llms and rel not in llms: problems.append(f"{rel}: missing from llms.txt")
+    if lang == "en" and rel != "index.html" and url not in llms and rel not in llms: problems.append(f"{rel}: missing from llms.txt")
     for img in p.imgs:
         for k in ("alt", "width", "height"):
             if k not in img: problems.append(f"{rel}: <img {img.get('src')}> missing {k}")
@@ -80,14 +90,16 @@ for f in sorted(ROOT.rglob("*.html")):
     for b in BANNED:
         if re.search(b, text): problems.append(f"{rel}: banned/outdated phrase /{b}/")
 
-# Every guide and comparison must be linked from every page's footer (new pages were under-linked before).
-content = sorted(f.relative_to(ROOT).as_posix() for d in ("guides", "compare") for f in (ROOT / d).glob("*.html"))
+# Every guide and comparison must be linked from every page's footer, in the page's own language.
+def content(prefix):
+    return sorted(f.relative_to(ROOT).as_posix() for d in ("guides", "compare") for f in (ROOT / prefix / d).glob("*.html"))
 for f in sorted(ROOT.rglob("*.html")):
     rel = f.relative_to(ROOT).as_posix()
     if rel.startswith("_ops/") or re.match(r"google[0-9a-f]+\.html", rel): continue
+    lang = PAGE_LANG(rel)
     footer = f.read_text().split("<footer", 1)[-1]
-    for c in content:
-        if c + '"' not in footer: problems.append(f"{rel}: footer does not link {c}")
+    for c in content("" if lang == "en" else lang):
+        if "/" + c + '"' not in footer.replace('href="', 'href="/'): problems.append(f"{rel}: footer does not link {c}")
 
 for txt in ("llms.txt", "llms-full.txt", "robots.txt"):
     t = (ROOT / txt).read_text().lower()

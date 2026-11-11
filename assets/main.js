@@ -7,6 +7,11 @@
 (function () {
   "use strict";
   var doc = document.documentElement;
+  var T = ({
+    fr: { pause: "Mettre en pause", play: "Lire l'aperçu", prev: "Captures précédentes", next: "Captures suivantes" },
+    de: { pause: "Vorschau anhalten", play: "Vorschau abspielen", prev: "Vorherige Screenshots", next: "Nächste Screenshots" },
+    es: { pause: "Pausar la vista previa", play: "Reproducir la vista previa", prev: "Capturas anteriores", next: "Capturas siguientes" }
+  })[(doc.lang || "en").slice(0, 2)] || { pause: "Pause preview", play: "Play preview", prev: T.prev, next: T.next };
   var hasIO = "IntersectionObserver" in window;
   var reduceMotion = window.matchMedia ? window.matchMedia("(prefers-reduced-motion: reduce)") : { matches: false };
   var conn = navigator.connection || {};
@@ -22,7 +27,7 @@
 
     function setState(playing) {
       btn.classList.toggle("is-paused", !playing);
-      btn.querySelector(".vid-label").textContent = playing ? "Pause preview" : "Play preview";
+      btn.querySelector(".vid-label").textContent = playing ? T.pause : T.play;
     }
     function attach() {
       if (video) return;
@@ -136,8 +141,8 @@
       wrap.appendChild(b);
       return b;
     }
-    var prev = button("strip-prev", "Previous screenshots", "M10 3L5 8l5 5");
-    var next = button("strip-next", "Next screenshots", "M6 3l5 5-5 5");
+    var prev = button("strip-prev", T.prev, "M10 3L5 8l5 5");
+    var next = button("strip-next", T.next, "M6 3l5 5-5 5");
     function go(dir) {
       strip.scrollBy({ left: dir * strip.clientWidth * 0.8, behavior: reduceMotion.matches ? "auto" : "smooth" });
     }

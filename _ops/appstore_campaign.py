@@ -20,8 +20,18 @@ TAG_OVERRIDES = {
 }
 
 
+LANGS = ("fr", "de", "es")  # translated copies live in /<lang>/ with the same paths as the English pages
+
+
 def tag_for(path: pathlib.Path) -> str:
     rel = path.relative_to(ROOT).with_suffix("").as_posix()
+    lang, _, rest = rel.partition("/")
+    if lang in LANGS:  # web-fr-g-<slug>: same tag as the English page with the language after "web-"
+        return ("web-" + lang + "-" + _base_tag(rest)[4:])[:40]
+    return _base_tag(rel)
+
+
+def _base_tag(rel: str) -> str:
     if rel in TAG_OVERRIDES: return TAG_OVERRIDES[rel]
     if rel == "index": return "web-home"
     folder, _, slug = rel.rpartition("/")
