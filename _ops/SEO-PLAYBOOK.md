@@ -173,3 +173,23 @@ Domain reviewed the same day at the owner's request: keep getphotocleaner.com. R
 ## 2026-11-12 — redesign merged with main
 
 `redesign-2026-11` was merged with `main` (press kit, one-time-purchase comparison, burst guide, full footer lists). The three newer pages were migrated to the shared chrome by `sync_chrome.py`; the template footer now lists 10 guides, 4 comparisons and the press kit, and the home page has the burst card and the one-time-purchase link. Checked: validator OK, all 22 pages at a true 390 px viewport with no horizontal overflow, home / press / one-time / burst read at 390 and 1280. Press kit and llms-full now say version 2.3.0 (live lookup).
+
+## Translations (fr, de, es), added 2026-11-12
+
+18 pages exist in French, German and Spanish under `/fr/`, `/de/`, `/es/` at the same paths as the English pages
+(home, about, support, calculator, 10 guides, 4 comparisons). Rules: `_ops/I18N.md`. Privacy, terms, press and 404 are
+English only.
+
+- **Rating or any fact changes:** update the three translated copies in the same run (visible text uses a decimal
+  comma, "4,6"; JSON-LD keeps "4.6"). A fact that differs between languages is a bug.
+- **A new English page:** publish it in English as usual. It gets no hreflang until translated copies exist; add them
+  later at the same path under each language folder, add the page to the footer of `_ops/chrome/<lang>.html`, then run
+  `sync_chrome.py`, `appstore_campaign.py`, `hreflang.py` and the validator, and add the three URLs to `sitemap.xml`.
+- **Footer or nav change:** edit all four templates in `_ops/chrome/`, then `python3 _ops/sync_chrome.py`. The language
+  switcher is the `{langs}` placeholder; the script writes it.
+- App labels come from the app's `Localizable.strings`; iOS menu names from Apple's localized support pages. Labels the
+  translators could not confirm on an Apple page are written as plain descriptions on purpose; do not "fix" them into
+  guessed menu names.
+- Open content questions found while translating (English pages, not changed): Slidebox is described as available
+  although its listing did not load on 8 November; the one-time-purchase page gives Swipewipe "Yes" for similar photos
+  and blur detection where the best-apps and Swipewipe pages show "—". Re-check both on the competitors' App Store pages.
