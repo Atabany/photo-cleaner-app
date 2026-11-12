@@ -75,6 +75,11 @@ for f in sorted(ROOT.rglob("*.html")):
     m = re.search(r'<html[^>]*\blang="([^"]+)"', html)
     if not m or m.group(1).split("-")[0] != lang: problems.append(f"{rel}: <html lang> should be {lang}")
     if lang != "en" and not (ROOT / rel.split("/", 1)[1]).exists(): problems.append(f"{rel}: no English page at the same path")
+    if lang != "en" and rel != "404.html":
+        og = dict(re.findall(r'<meta property="(og:url|og:locale)" content="([^"]*)"', html))
+        if og.get("og:url") != p.canon: problems.append(f"{rel}: og:url differs from the canonical")
+        if og.get("og:locale") != {"fr": "fr_FR", "de": "de_DE", "es": "es_ES"}[lang]: problems.append(f"{rel}: og:locale should match {lang}")
+        if f'"inLanguage": "{lang}"' not in html: problems.append(f"{rel}: JSON-LD has no inLanguage {lang}")
     if rel == "404.html" or p.noindex: continue
     if p.h1 != 1: problems.append(f"{rel}: {p.h1} <h1> elements")
     if not p.title or len(p.title.strip()) > 60: problems.append(f"{rel}: title length {len(p.title.strip())}")

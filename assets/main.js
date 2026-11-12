@@ -8,7 +8,7 @@
   "use strict";
   var doc = document.documentElement;
   var T = ({
-    fr: { pause: "Mettre en pause", play: "Lire l'aperçu", prev: "Captures précédentes", next: "Captures suivantes" },
+    fr: { pause: "Mettre en pause", play: "Lire l’aperçu", prev: "Captures précédentes", next: "Captures suivantes" },
     de: { pause: "Vorschau anhalten", play: "Vorschau abspielen", prev: "Vorherige Screenshots", next: "Nächste Screenshots" },
     es: { pause: "Pausar la vista previa", play: "Reproducir la vista previa", prev: "Capturas anteriores", next: "Capturas siguientes" }
   })[(doc.lang || "en").slice(0, 2)] || { pause: "Pause preview", play: "Play preview", prev: "Previous screenshots", next: "Next screenshots" };
