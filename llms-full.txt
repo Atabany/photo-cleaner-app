@@ -74,6 +74,10 @@ In Photos, open your library or a collection, tap Select, drag sideways along a 
 https://getphotocleaner.com/guides/delete-burst-photos-iphone.html
 Open the burst in Photos, tap Select, tick the frames to keep, tap Done and choose Keep Only your favorites; the rest go to Recently Deleted for 30 days. Bursts are collected in the Bursts album under Media Types; to delete whole bursts select their thumbnails and tap the trash icon. Volume Up bursts need Settings > Camera > Use Volume Up for Burst. Photo Cleaner has a Bursts category: swipe left to delete, right to keep, then review the Trash Bin and confirm. 100 free deletions, one time.
 
+=== GUIDE: How to delete similar photos on iPhone ===
+https://getphotocleaner.com/guides/delete-similar-photos-iphone.html
+Photos has no similar-photo finder: the Duplicates album (Utilities, iOS 16+) only lists exact copies. Delete similar shots by opening each cluster, picking the keeper (check faces, sharpness, edits, Favorites), tapping Select on the extra frames and the trash icon; items go to Recently Deleted for 30 days. For bursts use Select, then Done, then keep only your favorites. Photo Cleaner groups exact copies and near-identical shots, marks the best one in each group, and sends the rest to the Trash Bin for review before iOS asks you to confirm. Analysis is on-device. 100 free deletions, one time.
+
 === COMPARISON (checked October 2026; made by the Photo Cleaner developer) ===
 https://getphotocleaner.com/compare/best-photo-cleaner-apps-iphone.html
 Apple Photos (built in): free; Duplicates album merges identical copies; no swipe review, no similar-shot grouping, no blur detection, no sort by size.
